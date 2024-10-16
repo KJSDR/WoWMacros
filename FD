@@ -1,0 +1,83 @@
+/cast [target=focus] cyclone
+/cast [target=focus] skull bash
+/cast [target=focus] moonfire
+/cast [target=focus] maim
+/cast [target=focus] mighty bash
+/cast [target=focus] hibernate
+/cast [target=focus] entangling Roots
+/cast [target=focus] wild charge
+ 
+Focus skull bash that puts you in cat form 
+ 
+#showtooltip skull bash 
+/stopcasting 
+/cast [stance:0] Cat Form 
+/cast [target=focus] skull bash
+ 
+And now my mouseover macros + a wild charge macro that lets you use it as mouseover and have it work normally at the same time:
+ 
+#showtooltip 
+/use [@mouseover,help,nodead][help,nodead][@player] rejuvenation
+ 
+#showtooltip 
+/use [@mouseover,help,nodead][help,nodead][@player] regrowth
+ 
+#showtooltip 
+/use [@mouseover,help,nodead][help,nodead][@player] remove corruption
+ 
+#showtooltip 
+/use [@mouseover,help,nodead][help,nodead][@player] thorns
+ 
+I have target party1, party2, party3 keybinds as well I often use when I want to heal/cleanse my teammates  
+ 
+#showtooltip Wild Charge
+/cast [@mouseover,exists,help,stance:0] [@target,stance:0,help] Wild Charge
+/cast [stance:1/2,@mouseover,exists,harm][stance: 2,@target,exists,harm] Wild Charge
+/cast [stance:1/2/3] Wild Charge
+/cast wild charge
+ 
+My rake macro to find people in stealth:
+ 
+#showtooltip
+/cleartarget [dead]
+/targetenemy [noharm]
+/cast Rake
+ 
+Incap roar macro to avoid breaking it with auto attack:
+ 
+#showtooltip Incapacitating Roar
+/use Incapacitating Roar
+/stopattack
+ 
+Convoke macro: 
+ 
+#showtooltip convoke the spirits
+/use Forged Aspirant's Badge of Ferocity
+/cast !Convoke the Spirits
+ 
+Cancelform macro
+ 
+/cancelform
+ 
+Shadowmeld macro to make you prowl at the same time (more safe to get the rake stun)
+ 
+#showtooltip shadowmeld
+/cast prowl
+/use !shadowmeld
+ 
+If you are playing with a paladin on your team you should have a macro that can cancel BoP and BoF before they get stolen by a mage, I think stealth is a nice ability to do this with if you 
+ 
+/cast prowl
+/cancelaura Blessing of Protection 
+/cancelaura Blessing of Freedom
+ 
+New tww macros:
+ 
+#showtooltip 
+/cast [stance:1] rake; [stance:2] Mangle
+/cast rake
+ 
+#showtooltip [known:102359] Mass Entanglement; [known:102793] Ursol's Vortex
+/cast [known:102359] Mass Entanglement; [known:102793,@cursor] Ursol's Vortex
+ 
+ 
